@@ -111,6 +111,9 @@ p{
     text-decoration: none;
     padding: 1rem;
 }
+.menu a:last-child{
+    padding-bottom: 1.2rem;
+}
 .menu a:hover{
     background-color: var(--first-color);
     color: var(--white-color);
@@ -119,7 +122,24 @@ p{
     opacity: 1;
     pointer-events: auto;
 }
-
+@media screen and (min-width: 1024px) {
+    .menu-btn{
+        display: none;
+    }
+    .menu{
+        opacity: 1;
+        pointer-events: auto;
+        flex-direction: row;
+        position: static;
+        width: auto;
+    }
+    .menu a{
+        padding: 0 1rem;
+    }
+    .menu a:hover{
+        background-color: transparent;
+    }
+}
 /**Fin Menu**/
 
 /*Utilities*/
