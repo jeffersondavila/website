@@ -57,26 +57,32 @@ a:hover{
     opacity: 0.75;
 }
 h1{
+    color: var(--title-color);
     margin: 0;
     font-size: 2rem;
 }
 h2{
+    color: var(--title-color);
     margin: 0;
     font-size: 1.5rem;
 }
 h3{
+    color: var(--title-color);
     margin: 0;
     font-size: 1.25rem;
 }
 h4{
+    color: var(--title-color);
     margin: 0;
     font-size: 1rem;
 }
 h5{
+    color: var(--title-color);
     margin: 0;
     font-size: 0.85rem;
 }
 h6{
+    color: var(--title-color);
     margin: 0;
     font-size: 0.7rem;
 }
@@ -85,9 +91,12 @@ img{
     height: auto;
 }
 p{
-    line-height: 1.6px;
+    color: var(--text-color);
+    line-height: 25px;
 }
-
+[id]{
+    scroll-margin-top: 5ex;
+}
 /*Components*/
 /**Menu**/
 .menu-btn{
@@ -168,7 +177,8 @@ p{
 }
 .heroe-image-title{
     color: var(--white-color);
-    font-size: 6vw;
+    font-size: 6.5vw;
+    margin-bottom: 5px;
 }
 /*Fin Components*/
 
@@ -195,6 +205,21 @@ p{
     text-decoration: none;
     font-weight: bold;
 }
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.section{
+    padding: 2rem 1.5rem;
+}
+.scale-gray{
+    filter: grayscale(1);
+}
 
 /*Site Style*/
 /*Menu*/
@@ -206,7 +231,6 @@ p{
     z-index: 999;
     width: 100%;
     height: var(--header-height);
-    /* padding: 1rem; */
     padding: 0.9rem;
 }
 .header > .container{
@@ -221,3 +245,57 @@ p{
     font-weight: bold;
 }
 /*Fin menu*/
+
+/* About */
+.skill-div{
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+    text-align: center;
+}
+.skill-item{
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+}
+.skill-item > img{
+    width: 70%;
+}
+.skill-item > aside{
+    margin-top: 0.6rem;
+}
+/* Fin About */
+
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1024px){
+    .text-lg-center{
+        text-align: center;
+    }
+    .text-lg-left{
+        text-align: left;
+    }
+    .text-lg-right{
+        text-align: right;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+        align-content: center;
+    }
+    .title-skill{
+        margin-bottom: 0.6rem;
+    }
+    .skill-div{
+        grid-template-columns: repeat(3, 30%);
+        justify-content: space-between;
+    }
+    .skill-item{
+        padding: 0.5rem;
+    }
+    .skill-item > img{
+        width: 75%;
+    }
+}
