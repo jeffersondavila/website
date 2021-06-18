@@ -137,6 +137,10 @@ p{
     pointer-events: auto;
 }
 @media screen and (min-width: 1024px) {
+    .full-screen{
+        width: 100%;
+        min-height: 100vh;
+    }
     .menu-btn{
         display: none;
     }
