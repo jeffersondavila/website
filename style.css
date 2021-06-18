@@ -247,6 +247,9 @@ p{
 /*Fin menu*/
 
 /* About */
+.about > article{
+    margin-bottom: 2rem;
+}
 .skill-div{
     display: grid;
     grid-template-columns: repeat(2, 40%);
