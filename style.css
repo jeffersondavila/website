@@ -19,16 +19,15 @@
 :root{
     --first-color: #834075;
     --second-color: #000;
-    --third-color: #ffcb3a;
     --white-color: #fff;
     --white-alpha-color: rgba(255,255,255,0.5);
     --black-color: #000;
     --black-alpha-color: rgba(0,0,0,0.6);
+    --gray-light-color: #f3f3f3;
     --title-color: #333;
     --text-color: #222;
     --font-text: 'Raleway', sans-serif;
     --max-width: 1200px;
-    /* --header-height: 4rem; */
     --header-height: 3.7rem;
 }
 
@@ -224,6 +223,19 @@ p{
 .scale-gray{
     filter: grayscale(1);
 }
+.bg-light-gray{
+    background-color: var(--gray-light-color);
+}
+.services-title{
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1rem;
+    color: var(--title-color);
+}
 
 /*Site Style*/
 /*Menu*/
@@ -272,9 +284,30 @@ p{
 }
 /* Fin About */
 
+/* Services */
+.services{
+    padding: 2rem;
+}
+.services-card{
+    text-align: center;
+}
+.services-card svg{
+    fill: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+/* Fin Services */
 
 /* Media queries */
 @media screen and (min-width: 768px) {
+    .services > .container{
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+        align-content: center;
+    }
+    .services .services-title{
+        grid-column: span 2;
+    }
 }
 @media screen and (min-width: 1024px){
     .text-lg-center{
@@ -286,6 +319,7 @@ p{
     .text-lg-right{
         text-align: right;
     }
+    /* About */
     .about{
         display: grid;
         grid-template-columns: repeat(3, 30%);
@@ -305,4 +339,17 @@ p{
     .skill-item > img{
         width: 75%;
     }
+    /* Fin About */
+
+    /* Services */
+    .services{
+        padding: 0.1rem;
+    }
+    .services > .container{
+        grid-template-columns: repeat(3, 30%);
+    }
+    .services .services-title{
+        grid-column: span 3;
+    }
+    /* Fin Services */
 }
