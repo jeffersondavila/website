@@ -30,6 +30,7 @@
     --font-text: 'Raleway', sans-serif;
     --max-width: 1200px;
     --header-height: 3.7rem;
+    --link-color: #509ee3;
 }
 
 /*Reset*/
@@ -91,6 +92,10 @@ img{
     height: auto;
 }
 p{
+    color: var(--text-color);
+    line-height: 25px;
+}
+small{
     color: var(--text-color);
     line-height: 25px;
 }
@@ -161,8 +166,6 @@ p{
 /**Fin Menu**/
 
 /*Heroe Image Home*/
-
-/*Fin Heroe Image Home*/
 .heroe-image{
     background-image: url(assets/hero-image-home.jpg);
     background-position: center;
@@ -184,6 +187,49 @@ p{
     font-size: 6.5vw;
     margin-bottom: 5px;
 }
+/*Fin Heroe Image Home*/
+
+/* Modal Portfolio */
+.modal{
+    background-color: var(--black-alpha-color);
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-out;
+}
+.modal-content{
+    max-width: 400px;
+    background-color: var(--white-color);
+    padding: 1rem;
+    position: relative;
+}
+.modal-close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin: 0.3rem;
+    margin-right: -0.3rem; /*Opcional*/
+}
+.modal-close svg{
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--first-color);
+}
+.modal[id|="trabajo"]:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+/* Fin Modal Portfolio */
+
 /*Fin Components*/
 
 /*Utilities*/
@@ -249,7 +295,7 @@ p{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 998;
     width: 100%;
     height: var(--header-height);
     padding: 0.9rem;
@@ -333,6 +379,32 @@ p{
     pointer-events: auto;
 }
 /* Portfolio cards */
+.portfolio-modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.portfolio-modal img{
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.modal-info h3{
+    border-bottom: medium solid var(--first-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+.modal-details{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: 1.8rem;
+}
+.modal-details > small > b{
+    color: var(--first-color);
+}
+/* Modal portfolio */
+
+/* Fin modal portfolio */
 
 /* Media queries */
 @media screen and (min-width: 768px) {
@@ -352,6 +424,28 @@ p{
     }
     .portfolio h2{
         grid-column: span 2;
+    }
+    .modal-details{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-auto-rows: 1.8rem;
+    }
+    .modal-details > small > b{
+        color: var(--first-color);
+    }
+    .modal-content{
+        max-width: 800px;
+    }
+    .portfolio-modal{
+        flex-direction: row;
+        align-items: center;
+    }
+    .portfolio-modal img{
+        margin-bottom: 0.1rem;
+    }
+    .modal-info{
+        margin-left: 1rem;
+        width: 100%;
     }
 }
 @media screen and (min-width: 1024px){
