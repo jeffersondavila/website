@@ -289,13 +289,13 @@ small{
     resize: none;
     border: thin solid var(--black-alpha-color);
 }
-/* .contact-form input[type="submit"]{
-    margin-left: -0.5rem;
-    margin-top: -1rem;
+.contact-form input[type="submit"]{
+    margin-left: 10px;
+    margin-top: -5px;
     cursor: pointer;
     transition: all 0.5s ease-out;
-} */
-.contact-form button{
+}
+/* .contact-form button{
     border: none;
     margin-left: 10px;
     margin-top: 1px;
@@ -307,7 +307,7 @@ small{
     color: var(--white-color);
     font-weight: bold;
     cursor: pointer;
-}
+} */
 /* .contact-form input[type="submit"]:hover{
     opacity: 0.75;
 } */
