@@ -290,8 +290,8 @@ small{
     border: thin solid var(--black-alpha-color);
 }
 .contact-form input[type="submit"]{
-    margin-left: 0.7rem;
-    margin-top: -0.1rem;
+    margin-left: -0.5rem;
+    margin-top: -1rem;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
