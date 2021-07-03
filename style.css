@@ -292,6 +292,11 @@ small{
 .contact-form input[type="submit"]{
     margin-left: 0.7rem;
     margin-top: -0.1rem;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.contact-form input[type="submit"]:hover{
+    opacity: 0.75;
 }
 .contact-form-loader{
     width: 3.5rem;
