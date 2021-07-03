@@ -299,16 +299,18 @@ small{
     border: none;
     margin-left: 10px;
     margin-top: 1px;
+    cursor: pointer;
 }
 .contact-form input[type="submit"]{
     background-color: transparent;
     border: none;
     color: var(--white-color);
     font-weight: bold;
+    cursor: pointer;
 }
-.contact-form input[type="submit"]:hover{
+/* .contact-form input[type="submit"]:hover{
     opacity: 0.75;
-}
+} */
 .contact-form-loader{
     width: 3.5rem;
     height: 3.5rem;
