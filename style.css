@@ -25,6 +25,7 @@
     --black-color: #000;
     --black-alpha-color: rgba(0,0,0,0.6);
     --gray-light-color: #f3f3f3;
+    --gray-dark-color: #666;
     --title-color: #333;
     --text-color: #222;
     --font-text: 'Raleway', sans-serif;
@@ -167,11 +168,11 @@ small{
 
 /*Heroe Image Home*/
 .heroe-image{
-    background-image: url(assets/hero-image-home.jpg);
+    background-image: var(--heroe-image);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: var(--heroe-attachment);
 }
 .heroe-image-opacity{
     width: 100%;
@@ -180,7 +181,7 @@ small{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--black-alpha-color);
+    background-color: var(--heroe-opacity-color);
 }
 .heroe-image-title{
     color: var(--white-color);
@@ -211,6 +212,7 @@ small{
     background-color: var(--white-color);
     padding: 1rem;
     position: relative;
+    border-radius: 10px;
 }
 .modal-close{
     position: absolute;
@@ -229,6 +231,87 @@ small{
     pointer-events: auto;
 }
 /* Fin Modal Portfolio */
+
+/* Contact */
+.contact-card{
+    width: 95%;
+    height: 150px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact-card svg{
+    margin-bottom: 0.3rem;
+    fill: var(--first-color);
+    width: 2rem;
+    height: 2rem;
+}
+.contact-card h5{
+    margin-bottom: 0.3rem;
+}
+.social-media a{
+    text-decoration: none;
+    padding: 0 0.5rem;
+}
+.contact-card > .social-media svg{
+    fill: var(--text-color);
+}
+.contact-form{
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.contact-form > *{
+    display: block;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    width: 95%;
+}
+.contact-form input,
+.contact-form textarea{
+    border: none;
+    border-bottom: thin solid var(--black-alpha-color);
+    font-size: 1rem;
+    font-family: var(--font-text);
+    outline: none;
+}
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border-bottom: thin solid var(--black-color);
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: var(--gray-dark-color);
+}
+.contact-form textarea{
+    resize: none;
+    border: thin solid var(--black-alpha-color);
+}
+.contact-form input[type="submit"]{
+    margin-left: 0.7rem;
+    margin-top: -0.1rem;
+}
+.contact-form-loader{
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: -0.6rem;
+}
+.modal#gracias:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-contact-response{
+    text-align: center;
+    width: 250px;
+}
+.modal-contact-response svg{
+    fill: var(--first-color);
+    width: 3rem;
+    height: 3rem;
+}
+/* Fin Contact */
 
 /*Fin Components*/
 
@@ -447,6 +530,15 @@ small{
         margin-left: 1rem;
         width: 100%;
     }
+    .contact-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    .contact-cards > .contact-card:last-child{
+        grid-column: span 2;
+        width: 49%;
+    }
 }
 @media screen and (min-width: 1024px){
     .text-lg-center{
@@ -501,4 +593,26 @@ small{
     .portfolio h2{
         grid-column: span 3;
     }
+    /* Fin Portfolio Card */
+
+    /* Contact Cards */
+    .contact-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-cards > .contact-card:last-child{
+        grid-column: span 1;
+        width: 95%;
+    }
+    .contact-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-form textarea{
+        grid-column: span 2;
+        width: 97%;
+    }
+    .contact-form .contact-form-loader{
+        grid-column: span 2;
+    }
+    /* Contact Cards */
 }
