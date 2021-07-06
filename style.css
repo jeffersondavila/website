@@ -290,13 +290,22 @@ small{
     resize: none;
     border: thin solid var(--black-alpha-color);
 }
-.contact-form input[type="submit"]{
+.contact-form > p{
     margin-left: 10px;
-    margin-top: -5px;
+    margin-top: -1px;
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
-.contact-form input[type="submit"]:hover{
+.contact-form input[type="submit"]{
+    color: var(--white-color);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* transition: all 0.5s ease-out; */
+}
+/* .contact-form input[type="submit"]:hover, */
+.contact-form > p:hover{
     opacity: 0.75;
 }
 .contact-form-loader{
