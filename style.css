@@ -20,6 +20,7 @@
     --first-color: #834075;
     --first-alpha-color: rgba(160, 56, 132, 0.75);
     --second-color: #000;
+    --third-color: #212B38;
     --white-color: #fff;
     --white-alpha-color: rgba(255,255,255,0.5);
     --black-color: #000;
@@ -295,22 +296,9 @@ small{
     cursor: pointer;
     transition: all 0.5s ease-out;
 }
-/* .contact-form button{
-    border: none;
-    margin-left: 10px;
-    margin-top: 1px;
-    cursor: pointer;
-}
-.contact-form input[type="submit"]{
-    background-color: transparent;
-    border: none;
-    color: var(--white-color);
-    font-weight: bold;
-    cursor: pointer;
-} */
-/* .contact-form input[type="submit"]:hover{
+.contact-form input[type="submit"]:hover{
     opacity: 0.75;
-} */
+}
 .contact-form-loader{
     width: 3.5rem;
     height: 3.5rem;
@@ -504,6 +492,18 @@ small{
     color: var(--first-color);
 }
 /* Modal portfolio */
+
+/* Footer */
+.footer{
+    background-color: var(--gray-light-color);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer small{
+    font-weight: bold;
+}
+/* Fin Footer */
 
 /* Fin modal portfolio */
 
