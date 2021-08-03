@@ -559,13 +559,15 @@ small{
     }
     .contact-cards{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
+        grid-template-columns: repeat(1, 1fr);
+        margin: 3rem;
         justify-content: space-between;
     }
-    .contact-cards > .contact-card:last-child{
+    /* .contact-cards > .contact-card:last-child{
         grid-column: span 2;
         width: 49%;
-    }
+    } */
 }
 @media screen and (min-width: 1024px){
     .text-lg-center{
@@ -624,7 +626,8 @@ small{
 
     /* Contact Cards */
     .contact-cards{
-        grid-template-columns: repeat(3, 1fr);
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: repeat(2, 1fr);
     }
     .contact-cards > .contact-card:last-child{
         grid-column: span 1;
