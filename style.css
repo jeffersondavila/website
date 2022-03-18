@@ -415,6 +415,11 @@ small{
 .about > article{
     margin-bottom: 2rem;
 }
+.about article img[src="assets/photo.jpg"]{
+    width: 70%;
+    border-radius: 5px;
+    margin-left: 2.5rem;
+}
 .skill-div{
     display: grid;
     grid-template-columns: repeat(2, 40%);
