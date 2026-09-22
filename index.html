@@ -1,476 +1,662 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <script src="https://kit.fontawesome.com/ff2213df1a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="favicon/x-icon" href="assets/programming.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>document.documentElement.classList.remove('no-js');</script>
 
-    <title>Jefferson Dávila | Software Developer</title>
-    <meta name="description" content="Hola bienvenid@ a mi Portafolio, soy Jefferson Dávila, futuro Ingeniero en Sistemas, apasionado por la programación y el desarrollador web.">
+    <title>Jefferson Dávila | Senior .NET Developer</title>
+    <meta name="description"
+        content="Desarrollador de Software .NET Senior con más de 4 años de experiencia en sistemas empresariales: C#, ASP.NET Core y SQL Server, soluciones ERP y CRM, APIs REST/SOAP e integraciones.">
+    <meta name="author" content="Jefferson Dávila">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f1620">
     <link rel="canonical" href="https://jeffersondavila.github.io/website/">
-    <link rel="favicon" href="https://jeffersondavila.github.io/website/assets/programming.png">
-    <link rel="apple-touch-icon" href="https://jeffersondavila.github.io/website/assets/programming.png">
-    <meta name="theme-color" content="#834075">
-    <meta name="twitter.card" content="summary">
 
-    <meta name="twitter.title" content="Jefferson Dávila | Software Developer">
-    <meta name="twitter.image" content="https://jeffersondavila.github.io/website/assets/hero-image-home.jpg">
-    <meta name="twitter.url" content="https://jeffersondavila.github.io/website/">
-    <meta name="twitter.description" content="Hola bienvenid@ a mi Portafolio, soy Jefferson Dávila, futuro Ingeniero en Sistemas, apasionado por la programación y el desarrollador web.">
-    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/programming.png">
 
-    <meta property="og:title" content="Jefferson Dávila | Software Developer">
-    <meta property="og:description" content="Hola bienvenid@ a mi Portafolio, soy Jefferson Dávila, futuro Ingeniero en Sistemas, apasionado por la programación y el desarrollador web.">
-    <meta property="og:image" content="https://jeffersondavila.github.io/website/assets/hero-image-home.jpg">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Jefferson Dávila">
+    <meta property="og:locale" content="es_GT">
+    <meta property="og:title" content="Jefferson Dávila | Senior .NET Developer">
+    <meta property="og:description"
+        content="Desarrollador de Software .NET Senior con más de 4 años de experiencia en sistemas empresariales: C#, ASP.NET Core y SQL Server, soluciones ERP y CRM, APIs REST/SOAP e integraciones.">
     <meta property="og:url" content="https://jeffersondavila.github.io/website/">
+    <meta property="og:image" content="https://jeffersondavila.github.io/website/assets/photo.jpg">
+    <meta property="og:image:width" content="288">
+    <meta property="og:image:height" content="288">
+    <meta property="og:image:alt" content="Retrato de Jefferson Dávila">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jefferson Dávila | Senior .NET Developer">
+    <meta name="twitter:description"
+        content="Desarrollador de Software .NET Senior con más de 4 años de experiencia en sistemas empresariales: C#, ASP.NET Core y SQL Server, soluciones ERP y CRM, APIs REST/SOAP e integraciones.">
+    <meta name="twitter:image" content="https://jeffersondavila.github.io/website/assets/photo.jpg">
+    <meta name="twitter:image:alt" content="Retrato de Jefferson Dávila">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jefferson Dávila",
+        "jobTitle": "Senior .NET Developer",
+        "url": "https://jeffersondavila.github.io/website/",
+        "image": "https://jeffersondavila.github.io/website/assets/photo.jpg",
+        "email": "mailto:jeffersondavila16@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Ciudad de Guatemala",
+            "addressCountry": "GT"
+        },
+        "worksFor": { "@type": "Organization", "name": "GuatemalaDigital" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Mariano Gálvez" },
+        "knowsAbout": [
+            "C#", ".NET", "ASP.NET Core", "SQL Server", "Entity Framework",
+            "REST APIs", "SOAP", "ERP", "CRM", "SOLID", "Clean Code", "Desarrollo seguro"
+        ],
+        "sameAs": [
+            "https://github.com/jeffersondavila",
+            "https://www.linkedin.com/in/jefferson-d%C3%A1vila-305b54196/"
+        ]
+    }
+    </script>
 </head>
 
 <body>
-    <header class="header">
-        <section class="container">
-            <div class="logo">
-                <a href="#inicio">JEFF</a>
-            </div>
-            <button class="menu-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-                </svg>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+    <header class="site-header">
+        <div class="container site-header__inner">
+            <a class="brand" href="#inicio">
+                <span class="brand__mark" aria-hidden="true">JD</span>
+                <span class="brand__text">Jefferson Dávila</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-primary">
+                <span class="nav-toggle__text">Menú</span>
+                <svg class="nav-toggle__icon nav-toggle__icon--open" viewBox="0 0 24 24" width="22" height="22"
+                    aria-hidden="true" focusable="false">
+                    <path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
+                </svg>
+                <svg class="nav-toggle__icon nav-toggle__icon--close" viewBox="0 0 24 24" width="22" height="22"
+                    aria-hidden="true" focusable="false">
+                    <path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" />
                 </svg>
             </button>
 
-            <nav class="menu">
-                <a href="#inicio">Inicio</a>
-                <a href="#acerca">Acerca</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#portafolio">Portafolio</a>
-                <a href="#contacto">Contacto</a>
+            <nav class="nav" id="nav-primary" aria-label="Navegación principal">
+                <ul class="nav__list">
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#formacion">Formación</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a class="btn btn--sm btn--ghost nav__cv" href="assets/Jefferson Davila CV.pdf" target="_blank"
+                    rel="noopener">Descargar CV</a>
             </nav>
-        </section>
+        </div>
     </header>
 
-    <section id="inicio" class="home">
-        <article class="heroe-image"
-            style="--heroe-image: url('assets/hero-image-home.jpg'); --heroe-attachment: fixed;">
-            <aside class="heroe-image-opacity" style="--heroe-opacity-color: var(--black-alpha-color);">
-                <div>
-                    <h2 class="heroe-image-title">
-                        Bienvenid@s<br>a mi sitio<br>(en mantenimiento)
-                    </h2>
-                    <a href="#contacto" class="btn">CONTÁCTAME</a>
-                </div>
-            </aside>
-        </article>
-    </section>
+    <main id="contenido">
 
-    <section id="acerca" class="about section container full-screen">
-        <article>
-            <aside>
-                <h1 class="text-center text-lg-right">Jefferson Dávila</h1>
-                <h5 class="text-center text-lg-right">Estudiante de ingeniería en sistemas, desarrollador de <i>software y web</i></h5>
-                <p class="text-lg-right">Ingeniero de software .NET/C# con más de 3 años construyendo y escalando sistemas
-                    empresariales. Experto en ERP (contabilidad, cobros, costos y reporting), CRM, diseño de APIs REST, performance de SQL Server
-                    y automatización CI/CD. Integración de servicios de terceros vía REST y SOAP, aplicando patrones Clean, Factory, SOLID. Enfocado en
-                    confiabilidad, observabilidad y seguridad aplicada.</p>
-                <div class="text-center text-lg-left">
-                    <a class="btn" href="assets/Jefferson Davila CV.pdf" target="_blank" rel="noopener noreferrer">DESCARGAR MI
-                        CV</a>
+        <!-- ============================ HERO ============================ -->
+        <section class="hero" id="inicio">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <p class="hero__eyebrow">
+                        <span class="hero__dot" aria-hidden="true"></span>
+                        Ciudad de Guatemala · Guatemala
+                    </p>
+
+                    <h1 class="hero__name">Jefferson Dávila</h1>
+                    <p class="hero__role">Senior .NET Developer</p>
+
+                    <ul class="hero__tech">
+                        <li>C#</li>
+                        <li>ASP.NET Core</li>
+                        <li>SQL Server</li>
+                        <li>ERP / CRM</li>
+                        <li>REST / SOAP</li>
+                        <li>Secure Software Development</li>
+                    </ul>
+
+                    <p class="hero__lead">
+                        Más de 4 años analizando, desarrollando y manteniendo sistemas empresariales:
+                        procesos fiscales, contables, cobros, facturación y reporting sobre plataformas
+                        .NET y SQL Server.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#experiencia">Ver experiencia</a>
+                        <a class="btn btn--ghost" href="assets/Jefferson Davila CV.pdf" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                                <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Descargar CV
+                        </a>
+                        <a class="btn btn--ghost" href="https://www.linkedin.com/in/jefferson-d%C3%A1vila-305b54196/"
+                            target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                                <path fill="currentColor"
+                                    d="M20 3H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM8.34 18.34H5.67v-8.59h2.67v8.59zM7 8.57a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zm11.34 9.77h-2.67v-4.18c0-1-.02-2.28-1.39-2.28-1.39 0-1.6 1.09-1.6 2.21v4.25h-2.67v-8.59h2.56v1.17h.04c.36-.67 1.23-1.38 2.52-1.38 2.71 0 3.21 1.78 3.21 4.09v4.71z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a class="btn btn--ghost" href="https://github.com/jeffersondavila" target="_blank"
+                            rel="noopener">
+                            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12.03 2c-5.51 0-9.98 4.47-9.98 9.97 0 4.41 2.86 8.15 6.82 9.47.5.09.68-.22.68-.48 0-.24 0-.87-.01-1.7-2.78.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.1-4.54-4.93 0-1.09.39-1.98 1.02-2.67-.1-.26-.44-1.27.1-2.64 0 0 .84-.27 2.74 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.38.1 2.64.64.69 1.02 1.58 1.02 2.67 0 3.83-2.33 4.67-4.55 4.92.36.31.68.92.68 1.85 0 1.33-.01 2.41-.01 2.74 0 .26.18.58.69.48A9.98 9.98 0 0 0 22 11.97C22 6.47 17.53 2 12.03 2z" />
+                            </svg>
+                            GitHub
+                        </a>
+                    </div>
                 </div>
-            </aside>
-        </article>
-        <article>
-            <img class="scale-gray" src="assets/photo.jpg" alt="Jefferson Dávila">
-        </article>
-        <article>
-            <h2 class="title-skill text-center text-lg-left">Mis Skills</h2>
-            <div class="skill-div">
-                <div class="skill-item">
-                    <img src="assets/html5.svg" alt="Htlm">
-                    <aside>HTML</aside>
-                </div>
-                <div class="skill-item">
-                    <img src="assets/css-3.svg" alt="Css">
-                    <aside>CSS</aside>
-                </div>
-                <div class="skill-item">
-                    <img src="assets/js.svg" alt="Js">
-                    <aside>JAVASCRIPT</aside>
-                </div>
-                <div class="skill-item">
-                    <img src="assets/php.svg" alt="Php">
-                    <aside>PHP</aside>
-                </div>
-                <div class="skill-item">
-                    <img src="assets/java.svg" alt="Java">
-                    <aside>JAVA</aside>
-                </div>
-                <div class="skill-item">
-                    <img src="assets/mysql.svg" alt="MySql">
-                    <aside>MYSQL</aside>
+
+                <figure class="hero__portrait">
+                    <img src="assets/photo.jpg" width="288" height="288" alt="Retrato de Jefferson Dávila"
+                        fetchpriority="high" decoding="async">
+                </figure>
+            </div>
+        </section>
+
+        <!-- ============================ PERFIL ============================ -->
+        <section class="section" id="perfil">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">01 — Perfil</p>
+                    <h2 class="section__title">Qué construyo</h2>
+                </header>
+
+                <div class="profile">
+                    <div class="profile__text reveal">
+                        <p>
+                            Trabajo sobre plataformas empresariales <strong>.NET</strong>: soluciones
+                            <strong>ERP</strong> y <strong>CRM</strong> donde el negocio vive en los procesos
+                            fiscales, contables, de cobros y de facturación, y donde un error de cálculo o una
+                            consulta lenta se notan el mismo día.
+                        </p>
+                        <p>
+                            Mi trabajo va del análisis técnico del requerimiento hasta la funcionalidad en
+                            producción: diseño de la solución, implementación en <strong>C#</strong> y
+                            <strong>SQL Server</strong>, integración con servicios externos vía
+                            <strong>REST</strong> y <strong>SOAP</strong>, optimización de consultas y
+                            procedimientos almacenados, y diagnóstico de incidencias en funcionalidades críticas.
+                        </p>
+                        <p>
+                            Aplico principios <strong>SOLID</strong>, patrones de diseño y buenas prácticas de
+                            arquitectura, y complemento esa experiencia con una
+                            <strong>Maestría en Seguridad Informática y de Sistemas</strong>, con foco en
+                            seguridad aplicada al desarrollo de software.
+                        </p>
+                    </div>
+
+                    <ul class="facts reveal">
+                        <li class="fact">
+                            <span class="fact__value">4+</span>
+                            <span class="fact__label">años de experiencia profesional</span>
+                        </li>
+                        <li class="fact">
+                            <span class="fact__value">ERP / CRM</span>
+                            <span class="fact__label">contabilidad, cobros, facturación y reporting</span>
+                        </li>
+                        <li class="fact">
+                            <span class="fact__value">Multipaís</span>
+                            <span class="fact__label">procesos de facturación electrónica</span>
+                        </li>
+                        <li class="fact">
+                            <span class="fact__value">REST / SOAP</span>
+                            <span class="fact__label">diseño, consumo e integración de servicios</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </article>
-    </section>
+        </section>
 
-    <section id="servicios" class="services bg-light-gray">
-        <div class="container full-screen">
-            <h2 class="services-title">¿Qué te ofrezco?</h2>
-            <article class="services-card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M20,3H4C2.897,3,2,3.897,2,5v14c0,1.103,0.897,2,2,2h16c1.103,0,2-0.897,2-2V5C22,3.897,21.103,3,20,3z M4,19V7h16 l0.002,12H4z" />
-                    <path
-                        d="M9.293 9.293L5.586 13 9.293 16.707 10.707 15.293 8.414 13 10.707 10.707zM14.707 9.293L13.293 10.707 15.586 13 13.293 15.293 14.707 16.707 18.414 13z" />
-                </svg>
-                <h3>Programación <i>Web</i> y de <i>Software</i></h3>
-                <p>Desarrollo sitios y aplicaciones para plataformas <i>Web</i>. Te ayudo a construir tu proyecto de
-                    principio
-                    a fin: <i>Fronted</i>, <i>Backend</i> y Bases de datos</p>
-            </article>
-            <article class="services-card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M20,3H7C5.897,3,5,3.897,5,5v2H4C2.897,7,2,7.897,2,9v10c0,1.103,0.897,2,2,2h6c1.103,0,2-0.897,2-2h8c1.103,0,2-0.897,2-2 V5C22,3.897,21.103,3,20,3z M6,9h4l-0.003,9H4V9H6z M12,17V9c0-1.103-0.897-2-2-2H7V5h11v12H12z" />
-                </svg>
-                <h3>Diseño <i>Web</i> y de <i>Software</i></h3>
-                <p>Prototipo y maqueto tus diseños estáticos y los convierto en increíbles sitios y aplicaciones óptimas y accesibles.
-                </p>
-            </article>
-            <article class="services-card">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px" height="30px"
-                    viewBox="0 0 48.832 48.832" style="enable-background:new 0 0 48.832 48.832;" xml:space="preserve">
-                    <g>
-                        <g id="Layer_20_51_">
-                            <g>
-                                <polygon points="15.42,32.814 22.23,32.814 22.23,34.385 15.42,34.385 15.42,35.68 36.838,35.68 36.838,34.385 28.898,34.385
-				28.898,32.814 37.729,32.814 37.729,29.227 15.42,29.227 			" />
-                                <polygon points="9.489,11.231 41.957,11.231 41.957,24.209 44.739,24.209 44.739,8.449 6.707,8.449 6.707,17.14 9.489,17.14
-				" />
-                                <path d="M0,39.799h14.523V18.013H0V39.799z M7.568,38.705c-0.386,0-0.7-0.312-0.7-0.699c0-0.386,0.314-0.699,0.7-0.699
-				c0.387,0,0.699,0.312,0.699,0.699S7.955,38.705,7.568,38.705z M2.1,20.113h10.325l-0.001,16.072H2.1V20.113z" />
-                                <path d="M38.715,25.046v15.337h10.117V25.046H38.715z M43.979,25.68c0.121,0,0.22,0.101,0.22,0.221
-				c0,0.121-0.099,0.222-0.22,0.222c-0.123,0-0.223-0.101-0.223-0.222C43.756,25.78,43.855,25.68,43.979,25.68z M42.665,26.416
-				h2.623v0.212h-2.623V26.416z M43.891,39.721c-0.291,0-0.524-0.236-0.524-0.525c0-0.29,0.233-0.524,0.524-0.524
-				c0.289,0,0.525,0.234,0.525,0.524C44.416,39.484,44.18,39.721,43.891,39.721z M47.369,37.915
-				c-2.368,0.013-6.016,0.022-7.189,0.012V27.382l7.189-0.001V37.915z" />
-                            </g>
-                        </g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                    <g>
-                    </g>
-                </svg>
+        <!-- ============================ EXPERIENCIA ============================ -->
+        <section class="section section--alt" id="experiencia">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">02 — Experiencia</p>
+                    <h2 class="section__title">Trayectoria profesional</h2>
+                    <p class="section__intro">
+                        Cuatro años de crecimiento dentro de la misma empresa, de Junior a Senior.
+                    </p>
+                </header>
 
-                <h3><i>Fully Responsive</i></h3>
-                <p>Tu sitio se visualizara correctamente en cualquier dispositivo, incluyendo Teléfono, <i>Tablet</i> y
-                    Computadora.</p>
-            </article>
-            <article class="services-card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z" />
-                    <path
-                        d="M11.412,8.586C11.791,8.966,12,9.468,12,10h2c0-1.065-0.416-2.069-1.174-2.828c-1.514-1.512-4.139-1.512-5.652,0 l1.412,1.416C9.346,7.83,10.656,7.832,11.412,8.586z" />
-                </svg>
-                <h3><i>SEO</i></h3>
-                <p><i>Search Engine Optimization</i>, optimizo tus sitios y aplicaciones <i>web</i> para que mejoren su
-                    posición en
-                    los buscadores orgánicamente.</p>
-            </article>
-        </div>
-    </section>
+                <ol class="timeline">
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker timeline__marker--current" aria-hidden="true"></div>
+                        <article class="role">
+                            <div class="role__head">
+                                <p class="role__period">
+                                    <time datetime="2024-10">Octubre 2024</time> — Actualidad
+                                    <span class="chip chip--now">Puesto actual</span>
+                                </p>
+                                <h3 class="role__title">Desarrollador de Software .NET Senior</h3>
+                                <p class="role__company">GuatemalaDigital</p>
+                            </div>
+                            <p class="role__summary">
+                                Desarrollo, análisis e implementación de soluciones empresariales para sistemas
+                                ERP y CRM: procesos fiscales, contables, cobros, facturación, bases de datos e
+                                integraciones con servicios externos.
+                            </p>
+                            <ul class="role__list">
+                                <li>Análisis técnico de requerimientos y diseño de soluciones sobre plataformas
+                                    empresariales .NET.</li>
+                                <li>Desarrollo e implementación de funcionalidades con C#, .NET y SQL Server.</li>
+                                <li>Desarrollo y mantenimiento de procesos ERP y CRM de contabilidad, cobros,
+                                    facturación y procesos fiscales.</li>
+                                <li>Implementación y mantenimiento de procesos de facturación electrónica para
+                                    múltiples países.</li>
+                                <li>Diseño, consumo e integración de APIs REST, servicios SOAP y servicios de
+                                    terceros.</li>
+                                <li>Análisis y optimización de consultas, procedimientos almacenados y procesos en
+                                    SQL Server.</li>
+                                <li>Diagnóstico y resolución de incidencias en funcionalidades críticas del negocio.
+                                </li>
+                                <li>Revisión de código y apoyo técnico a otros desarrolladores.</li>
+                                <li>Coordinación técnica con equipos de desarrollo e infraestructura.</li>
+                                <li>Participación en auditoría de seguridad informática para identificación y
+                                    análisis de vulnerabilidades en sistemas y aplicaciones.</li>
+                            </ul>
+                        </article>
+                    </li>
 
-    <!-- <section id="portafolio" class="portfolio section">
-        <div class="container">
-            <h2 class="services-title">Mis trabajos</h2>
-            <a href="#trabajo-1" class="portfolio-card">
-                <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
-                <aside class="portfolio-card-info">
-                    <div>
-                        <h3 class="text-white">Batatabit</h3>
-                        <p class="text-white">La próxima revolución en el intercambio de criptomonedas, Batatabit te
-                            ayuda a navegar entre los diferentes precios y tendencias.</p>
-                    </div>
-                </aside>
-            </a>
-            <a href="#trabajo-2" class="portfolio-card">
-                <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
-                <aside class="portfolio-card-info">
-                    <div>
-                        <h3 class="text-white">Nuestra creatividad es tu éxito.</h3>
-                        <blockquote class="text-white">Cualquiera que les diga que no se encuentran con un bloqueo
-                            creativo no es un apasionado de lo que hace o está robando las ideas de otra persona.
-                        </blockquote>
-                        <cite class="text-white">Diseñador gráfico Mike McQuade</cite>
-                    </div>
-                </aside>
-            </a>
-        </div>
-    </section> -->
+                    <li class="timeline__item reveal">
+                        <div class="timeline__marker" aria-hidden="true"></div>
+                        <article class="role">
+                            <div class="role__head">
+                                <p class="role__period">
+                                    <time datetime="2022-04">Abril 2022</time> —
+                                    <time datetime="2024-10">Octubre 2024</time>
+                                </p>
+                                <h3 class="role__title">Desarrollador de Software .NET Junior</h3>
+                                <p class="role__company">GuatemalaDigital</p>
+                            </div>
+                            <p class="role__summary">
+                                Desarrollo y mantenimiento de funcionalidades para sistemas ERP y CRM con
+                                tecnologías .NET y SQL Server.
+                            </p>
+                            <ul class="role__list">
+                                <li>Desarrollo de nuevas funcionalidades en aplicaciones .NET.</li>
+                                <li>Desarrollo de consultas, procedimientos almacenados y reportes financieros en
+                                    SQL Server.</li>
+                                <li>Análisis y validación de datos y requerimientos.</li>
+                                <li>Mantenimiento y ajustes de procesos de facturación electrónica.</li>
+                                <li>Corrección de incidencias y mantenimiento de sistemas existentes.</li>
+                            </ul>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+        </section>
 
-    <article class="modal" id="trabajo-1">
-        <div class="modal-content">
-            <a href="#close" class="modal-close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
-                </svg>
-            </a>
-            <article class="portfolio-modal">
-                <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
-                <div class="modal-info">
-                    <h3>Batatabit</h3>
-                    <p>La próxima revolución en el intercambio de criptomonedas, Batatabit te ayuda a navegar entre los
-                        diferentes precios y tendencias.</p>
-                    <aside class="modal-details">
-                        <small><b>Tipo:</b></small>
-                        <small>Landing Page</small>
-                        <small><b>Sitio:</b></small>
-                        <small><a href="https://jeffersondavila.github.io/batatabit/" target="_blank"
-                                rel="nofollow">Enlace</a></small>
-                        <small><b>Código:</b></small>
-                        <small><a href="https://github.com/jeffersondavila/batatabit.git" target="_blank"
-                                rel="nofollow">Enlace</a></small>
-                    </aside>
-                </div>
-            </article>
-        </div>
-    </article>
-    <article class="modal" id="trabajo-2">
-        <div class="modal-content">
-            <a href="#close" class="modal-close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path
-                        d="M12,2C6.486,2,2,6.486,2,12s4.486,10,10,10s10-4.486,10-10S17.514,2,12,2z M16.207,14.793l-1.414,1.414L12,13.414 l-2.793,2.793l-1.414-1.414L10.586,12L7.793,9.207l1.414-1.414L12,10.586l2.793-2.793l1.414,1.414L13.414,12L16.207,14.793z" />
-                </svg>
-            </a>
-            <article class="portfolio-modal">
-                <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
-                <div class="modal-info">
-                    <h3>Nuestra creatividad es tu éxito</h3>
-                    <p>Cualquiera que les diga que no se encuentran con un bloqueo creativo no es un apasionado de lo
-                        que hace o está robando las ideas de otra persona.</p>
-                    <aside class="modal-details">
-                        <small><b>Tipo:</b></small>
-                        <small>Landing Page</small>
-                        <small><b>Sitio:</b></small>
-                        <small><a href="https://jeffersondavila.github.io/Pagina-con-Animaciones/" target="_blank"
-                                rel="nofollow">Enlace</a></small>
-                        <small><b>Código:</b></small>
-                        <small><a href="https://github.com/jeffersondavila/Pagina-con-Animaciones.git" target="_blank"
-                                rel="nofollow">Enlace</a></small>
-                    </aside>
-                </div>
-            </article>
-        </div>
-    </article>
+        <!-- ============================ STACK ============================ -->
+        <section class="section" id="stack">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">03 — Stack</p>
+                    <h2 class="section__title">Tecnologías y competencias técnicas</h2>
+                </header>
 
-    <section id="contacto" class="contact section">
-        <div class="container">
-            <h2 class="contact-title services-title">¿Interesado?</h2>
-            <article class="contact-cards">
-                <aside class="contact-card box-shadow-1">
-                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27.02 27.02"
-                        style="enable-background:new 0 0 27.02 27.02;" xml:space="preserve">
-                        <g>
-                            <path style="fill:#834075;" d="M3.674,24.876c0,0-0.024,0.604,0.566,0.604c0.734,0,6.811-0.008,6.811-0.008l0.01-5.581
-		c0,0-0.096-0.92,0.797-0.92h2.826c1.056,0,0.991,0.92,0.991,0.92l-0.012,5.563c0,0,5.762,0,6.667,0
-		c0.749,0,0.715-0.752,0.715-0.752V14.413l-9.396-8.358l-9.975,8.358C3.674,14.413,3.674,24.876,3.674,24.876z" />
-                            <path style="fill:#834075;" d="M0,13.635c0,0,0.847,1.561,2.694,0l11.038-9.338l10.349,9.28c2.138,1.542,2.939,0,2.939,0
-		L13.732,1.54L0,13.635z" />
-                            <polygon style="fill:#834075;"
-                                points="23.83,4.275 21.168,4.275 21.179,7.503 23.83,9.752 	" />
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                    </svg>
-                    <h5>UBICACIÓN</h5>
-                    <small>Guatemala, Guatemala</small>
-                </aside>
-                <!-- <aside class="contact-card box-shadow-1">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
-                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                        <g>
-                            <g>
-                                <g>
-                                    <path
-                                        d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646
-				c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719
-				C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z" />
-                                    <path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542C416.51,195.01,317.052,279.688,285.76,307.885
-				c-17.563,15.854-41.938,15.854-59.542-0.021c-33.354-30.052-145.042-125-208.656-178.917c-3.167-2.688-7.625-3.281-11.375-1.542
-				C2.417,129.156,0,132.927,0,137.083v268.25C0,428.865,19.135,448,42.667,448h426.667C492.865,448,512,428.865,512,405.333
-				v-268.25C512,132.927,509.583,129.146,505.813,127.406z" />
-                                </g>
-                            </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
-                    </svg>
-                    <h5>EMAIL</h5>
-                    <small><a href="mailto:xxx@yyy.com">xxx@yyy.com</a></small>
-                </aside> -->
-                <aside class="contact-card box-shadow-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M16.018,3.815L15.232,8h-4.966l0.716-3.815L9.018,3.815L8.232,8H4v2h3.857l-0.751,4H3v2h3.731l-0.714,3.805l1.965,0.369 L8.766,16h4.966l-0.714,3.805l1.965,0.369L15.766,16H20v-2h-3.859l0.751-4H21V8h-3.733l0.716-3.815L16.018,3.815z M14.106,14H9.141 l0.751-4h4.966L14.106,14z" />
-                    </svg>
-                    <h5><i>SOCIAL MEDIA</i></h5>
-                    <small class="social-media">
-                        <!-- <a href="https://twitter.com/UserName" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809	c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793	c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05	c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032	c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028	c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22	c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z" />
-                            </svg>
-                        </a> -->
-                        <a href="https://github.com/jeffersondavila" target="_blank" rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.026,2c-5.509,0-9.974,4.465-9.974,9.974c0,4.406,2.857,8.145,6.821,9.465	c0.499,0.09,0.679-0.217,0.679-0.481c0-0.237-0.008-0.865-0.011-1.696c-2.775,0.602-3.361-1.338-3.361-1.338	c-0.452-1.152-1.107-1.459-1.107-1.459c-0.905-0.619,0.069-0.605,0.069-0.605c1.002,0.07,1.527,1.028,1.527,1.028	c0.89,1.524,2.336,1.084,2.902,0.829c0.091-0.645,0.351-1.085,0.635-1.334c-2.214-0.251-4.542-1.107-4.542-4.93	c0-1.087,0.389-1.979,1.024-2.675c-0.101-0.253-0.446-1.268,0.099-2.64c0,0,0.837-0.269,2.742,1.021	c0.798-0.221,1.649-0.332,2.496-0.336c0.849,0.004,1.701,0.115,2.496,0.336c1.906-1.291,2.742-1.021,2.742-1.021	c0.545,1.372,0.203,2.387,0.099,2.64c0.64,0.696,1.024,1.587,1.024,2.675c0,3.833-2.33,4.675-4.552,4.922	c0.355,0.308,0.675,0.916,0.675,1.846c0,1.334-0.012,2.41-0.012,2.737c0,0.267,0.178,0.577,0.687,0.479	C19.146,20.115,22,16.379,22,11.974C22,6.465,17.535,2,12.026,2z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/jefferson-d%C3%A1vila-305b54196/" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M20,3H4C3.447,3,3,3.448,3,4v16c0,0.552,0.447,1,1,1h16c0.553,0,1-0.448,1-1V4C21,3.448,20.553,3,20,3z M8.339,18.337H5.667	v-8.59h2.672V18.337z M7.003,8.574c-0.856,0-1.548-0.694-1.548-1.548s0.691-1.548,1.548-1.548c0.854,0,1.548,0.693,1.548,1.548	S7.857,8.574,7.003,8.574z M18.338,18.337h-2.669V14.16c0-0.996-0.018-2.277-1.388-2.277c-1.39,0-1.601,1.086-1.601,2.207v4.248	h-2.667v-8.59h2.56v1.174h0.037c0.355-0.675,1.227-1.387,2.524-1.387c2.704,0,3.203,1.778,3.203,4.092V18.337z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.youtube.com/@QuelocoBro" target="_blank" rel="noopener noreferrer">
-                            <svg width="800px" height="800px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <path fill="#444"
-                                    d="M6.6 0h-0.9l-0.6 2.3-0.6-2.3h-1c0.2 0.6 0.4 1.1 0.6 1.7 0.3 0.8 0.5 1.5 0.5 1.9v2.4h0.9v-2.4l1.1-3.6zM9 4.5v-1.5c0-0.5-0.1-0.8-0.3-1.1s-0.5-0.4-0.9-0.4c-0.4 0-0.7 0.2-0.9 0.5-0.2 0.2-0.3 0.5-0.3 1v1.6c0 0.5 0.1 0.8 0.3 1 0.2 0.3 0.5 0.4 0.9 0.4s0.7-0.2 0.9-0.5c0.2-0.1 0.3-0.5 0.3-1zM8.2 4.7c0 0.4-0.1 0.6-0.4 0.6s-0.4-0.2-0.4-0.6v-1.9c0-0.4 0.1-0.6 0.4-0.6s0.4 0.2 0.4 0.6v1.9zM12 6v-4.5h-0.8v3.4c-0.2 0.3-0.3 0.4-0.5 0.4-0.1 0-0.2-0.1-0.2-0.2 0 0 0-0.1 0-0.3v-3.3h-0.8v3.5c0 0.3 0 0.5 0.1 0.7 0 0.2 0.2 0.3 0.5 0.3s0.6-0.2 0.9-0.5v0.5h0.8z">
-                                </path>
-                                <path fill="#444" d="M12.4 10.5c-0.3 0-0.4 0.2-0.4 0.6v0.4h0.8v-0.4c0-0.4-0.1-0.6-0.4-0.6z"></path>
-                                <path fill="#444"
-                                    d="M9.5 10.5c-0.1 0-0.3 0.1-0.4 0.2v2.7c0.1 0.1 0.3 0.2 0.4 0.2 0.2 0 0.3-0.2 0.3-0.6v-1.9c0-0.4-0.1-0.6-0.3-0.6z">
-                                </path>
-                                <path fill="#444"
-                                    d="M14.4 8.3c-0.2-0.7-0.8-1.3-1.4-1.3-1.6-0.2-3.3-0.2-5-0.2s-3.3 0-5 0.2c-0.6 0-1.2 0.6-1.4 1.3-0.2 1-0.2 2.1-0.2 3.1s0 2.1 0.2 3.1c0.2 0.7 0.7 1.2 1.4 1.3 1.7 0.2 3.3 0.2 5 0.2s3.3 0 5-0.2c0.7-0.1 1.3-0.6 1.4-1.3 0.2-1 0.2-2.1 0.2-3.1s0-2.1-0.2-3.1zM5.2 9.2h-1v5.1h-0.9v-5.1h-0.9v-0.9h2.8v0.9zM7.6 14.3h-0.8v-0.5c-0.3 0.4-0.6 0.5-0.9 0.5s-0.4-0.1-0.5-0.3c0-0.1-0.1-0.3-0.1-0.7v-3.5h0.8v3.2c0 0.2 0 0.3 0 0.3 0 0.1 0.1 0.2 0.2 0.2 0.2 0 0.3-0.1 0.5-0.4v-3.3h0.8v4.5zM10.6 12.9c0 0.4 0 0.7-0.1 0.9-0.1 0.3-0.3 0.5-0.6 0.5s-0.6-0.2-0.8-0.5v0.4h-0.8v-5.9h0.8v1.9c0.3-0.3 0.5-0.5 0.8-0.5s0.5 0.2 0.6 0.5c0.1 0.2 0.1 0.5 0.1 0.9v1.8zM13.6 12.2h-1.6v0.8c0 0.4 0.1 0.6 0.4 0.6 0.2 0 0.3-0.1 0.4-0.3 0 0 0-0.2 0-0.5h0.8v0.1c0 0.3 0 0.4 0 0.5 0 0.2-0.1 0.3-0.2 0.5-0.2 0.3-0.5 0.5-1 0.5-0.4 0-0.7-0.2-1-0.5-0.2-0.2-0.3-0.6-0.3-1v-1.5c0-0.5 0.1-0.8 0.2-1 0.2-0.3 0.5-0.5 1-0.5 0.4 0 0.7 0.2 0.9 0.5 0.2 0.2 0.2 0.6 0.2 1v0.8z">
-                                </path>
-                            </svg>
-                        </a>
-                    </small>
-                </aside>
-            </article>
-            <form class="contact-form box-shadow-1">
-                <input type="text" name="name" placeholder="Ingresa tu nombre *" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
-                    title="Nombre sólo acepta letras y espacios en blanco." required>
-                <input type="email" name="email" placeholder="Ingresa tu correo *"
-                    pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
-                    title="Email sólo acepta emails." required>
-                <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *"
-                    title="Escribe tu comentario." required></textarea>
-                <div class="contact-form-loader none">
-                    <img src="assets/loader.svg" alt="Loader">
-                </div>
-                <p class="btn"><input type="submit" value="ENVIAR MENSAJE"></p>
-                <!-- <button class="btn"><input type="submit" value="ENVIAR MENSAJE"></button> -->
-            </form>
-            <article class="modal" id="gracias">
-                <div class="modal-content">
-                    <article class="modal-contact-response">
-                        <h3>¡Muchas gracias! <br> Por tus comentarios</button></h3>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z" />
-                            <path
-                                d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z" />
-                            <path
-                                d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z" />
-                        </svg>
+                <div class="stack">
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">Backend</h3>
+                        <ul class="tags">
+                            <li>C#</li>
+                            <li>.NET</li>
+                            <li>.NET Core</li>
+                            <li>ASP.NET Core</li>
+                            <li>Web API</li>
+                            <li>.NET Framework</li>
+                            <li>Entity Framework</li>
+                            <li>VB.NET</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">Bases de datos</h3>
+                        <ul class="tags">
+                            <li>SQL Server</li>
+                            <li>T-SQL</li>
+                            <li>CTEs</li>
+                            <li>Stored Procedures</li>
+                            <li>Índices</li>
+                            <li>Optimización de consultas</li>
+                            <li>Reporting</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">APIs e integraciones</h3>
+                        <ul class="tags">
+                            <li>REST APIs</li>
+                            <li>SOAP</li>
+                            <li>Servicios de terceros</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">Arquitectura y desarrollo</h3>
+                        <ul class="tags">
+                            <li>Arquitectura por capas</li>
+                            <li>MVC</li>
+                            <li>SOLID</li>
+                            <li>Clean Code</li>
+                            <li>Patrones de diseño</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">DevOps y control de versiones</h3>
+                        <ul class="tags">
+                            <li>Git</li>
+                            <li>Branching</li>
+                            <li>Code Reviews</li>
+                            <li>Pull Requests</li>
+                            <li>Build / Deploy Pipelines</li>
+                            <li>CI/CD</li>
+                        </ul>
+                    </article>
+
+                    <article class="stack__group reveal">
+                        <h3 class="stack__title">Seguridad</h3>
+                        <ul class="tags">
+                            <li>Análisis de vulnerabilidades</li>
+                            <li>Auditoría de seguridad</li>
+                            <li>Desarrollo seguro</li>
+                        </ul>
                     </article>
                 </div>
-            </article>
-        </div>
-    </section>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <div class="container">
-            <small>Copyright &copy; 2025, Jefferson Dávila<br>Todos los derechos reservados</small>
+        <!-- ============================ PROYECTOS ============================ -->
+        <section class="section section--alt" id="proyectos">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">04 — Proyectos</p>
+                    <h2 class="section__title">Proyectos personales</h2>
+                    <p class="section__intro">
+                        El trabajo de los sistemas ERP y CRM que mantengo no es público. Estos son proyectos
+                        propios, con el código abierto en GitHub.
+                    </p>
+                </header>
+
+                <div class="projects">
+                    <article class="project reveal">
+                        <div class="project__head">
+                            <h3 class="project__title">TestBlog</h3>
+                            <p class="project__kind">API REST en ASP.NET Core</p>
+                        </div>
+                        <p class="project__summary">
+                            Implementación de referencia de una API REST para un blog, pensada para practicar el
+                            camino completo: modelo de datos, contrato documentado y consumo desde clientes
+                            distintos sin escribir el cliente HTTP a mano.
+                        </p>
+                        <h4 class="project__subtitle">Qué construí</h4>
+                        <ul class="project__list">
+                            <li>API en ASP.NET Core 8 con controladores, DTOs y capa de servicio, y persistencia
+                                con Entity Framework Core sobre SQL Server.</li>
+                            <li>Pruebas unitarias del servicio con proveedor en memoria y reporte de cobertura.</li>
+                            <li>Contrato OpenAPI expuesto con Swagger y clientes tipados generados con NSwag.</li>
+                            <li>Cliente Blazor WebAssembly y un cliente aparte para consumo desde un servicio
+                                externo.</li>
+                        </ul>
+                        <ul class="tags tags--sm">
+                            <li>C#</li>
+                            <li>.NET 8</li>
+                            <li>ASP.NET Core</li>
+                            <li>Entity Framework Core</li>
+                            <li>SQL Server</li>
+                            <li>OpenAPI / Swagger</li>
+                            <li>NSwag</li>
+                            <li>Blazor WebAssembly</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/jeffersondavila/TestBlog-Backend" target="_blank"
+                                    rel="noopener">API <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="https://github.com/jeffersondavila/TestBlog-Frontend" target="_blank"
+                                    rel="noopener">Cliente Blazor <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="https://github.com/jeffersondavila/TestBlog-ServicioExterno" target="_blank"
+                                    rel="noopener">Servicio externo <span aria-hidden="true">↗</span></a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__head">
+                            <h3 class="project__title">Blog personal</h3>
+                            <p class="project__kind">Plataforma propia · <span class="chip">En desarrollo</span></p>
+                        </div>
+                        <p class="project__summary">
+                            Un blog no necesita tres repositorios; lo separé así a propósito, para tratarlo como un
+                            proyecto de ingeniería completo y dejar por escrito las decisiones, el estado y el
+                            roadmap junto al código.
+                        </p>
+                        <h4 class="project__subtitle">Qué construí</h4>
+                        <ul class="project__list">
+                            <li>Sitio público en React, TypeScript y Vite, con sistema de diseño propio, búsqueda,
+                                filtros por etiqueta y render de Markdown saneado.</li>
+                            <li>API en FastAPI y PostgreSQL con configuración tipada, logging estructurado,
+                                migraciones con Alembic, autenticación administrativa y pruebas.</li>
+                            <li>Almacenamiento de objetos tras una interfaz común: MinIO en local, S3 en la nube.</li>
+                            <li>Entorno local reproducible con Docker Compose, más ADR, runbooks y estado del
+                                proyecto versionados.</li>
+                        </ul>
+                        <ul class="tags tags--sm">
+                            <li>React</li>
+                            <li>TypeScript</li>
+                            <li>Vite</li>
+                            <li>FastAPI</li>
+                            <li>Python</li>
+                            <li>PostgreSQL</li>
+                            <li>Alembic</li>
+                            <li>Docker</li>
+                            <li>MinIO / S3</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/jeffersondavila/personal-blog-frontend" target="_blank"
+                                    rel="noopener">Frontend <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="https://github.com/jeffersondavila/personal-blog-backend" target="_blank"
+                                    rel="noopener">Backend <span aria-hidden="true">↗</span></a></li>
+                            <li><a href="https://github.com/jeffersondavila/personal-blog-infra" target="_blank"
+                                    rel="noopener">Infraestructura <span aria-hidden="true">↗</span></a></li>
+                        </ul>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project__head">
+                            <h3 class="project__title">canvas-scraper</h3>
+                            <p class="project__kind">Automatización sobre API REST</p>
+                        </div>
+                        <p class="project__summary">
+                            Archivar a mano el material de cada curso de la maestría es lento y se olvida. Esta
+                            herramienta lo descarga desde la API oficial de Canvas LMS y lo deja consultable sin
+                            conexión.
+                        </p>
+                        <h4 class="project__subtitle">Qué construí</h4>
+                        <ul class="project__list">
+                            <li>Consumo paginado de la API de Canvas en cuatro fases: módulos, tareas, repositorio
+                                de archivos y entregas con su retroalimentación.</li>
+                            <li>Reescritura del HTML descargado a rutas locales para que páginas y foros se vean
+                                sin conexión.</li>
+                            <li>Configuración por archivo y variables de entorno, con el token fuera del
+                                repositorio, y pruebas automatizadas.</li>
+                        </ul>
+                        <ul class="tags tags--sm">
+                            <li>Python</li>
+                            <li>REST APIs</li>
+                            <li>Automatización</li>
+                            <li>Pruebas</li>
+                        </ul>
+                        <ul class="project__links">
+                            <li><a href="https://github.com/jeffersondavila/canvas-scraper" target="_blank"
+                                    rel="noopener">Repositorio <span aria-hidden="true">↗</span></a></li>
+                        </ul>
+                    </article>
+                </div>
+
+                <p class="projects__more reveal">
+                    <a href="https://github.com/jeffersondavila?tab=repositories" target="_blank" rel="noopener">
+                        Ver todos los repositorios en GitHub <span aria-hidden="true">↗</span>
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- ============================ FORMACIÓN ============================ -->
+        <section class="section" id="formacion">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">05 — Formación</p>
+                    <h2 class="section__title">Formación académica</h2>
+                </header>
+
+                <div class="education">
+                    <article class="edu reveal">
+                        <p class="edu__period">
+                            <time datetime="2025">2025</time> — Actualidad
+                            <span class="chip chip--now">En curso</span>
+                        </p>
+                        <h3 class="edu__title">Maestría en Seguridad Informática y de Sistemas</h3>
+                        <p class="edu__school">Universidad Mariano Gálvez</p>
+                        <p class="edu__note">Finalización estimada: 2027</p>
+                    </article>
+
+                    <article class="edu reveal">
+                        <p class="edu__period">
+                            <time datetime="2019">2019</time> — <time datetime="2023">2023</time>
+                        </p>
+                        <h3 class="edu__title">Ingeniería en Sistemas</h3>
+                        <p class="edu__school">Universidad Mariano Gálvez</p>
+                        <p class="edu__note">Cierre de pensum</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================ CONTACTO ============================ -->
+        <section class="section section--alt" id="contacto">
+            <div class="container">
+                <header class="section__head reveal">
+                    <p class="section__eyebrow">06 — Contacto</p>
+                    <h2 class="section__title">Hablemos</h2>
+                    <p class="section__intro">
+                        Escríbeme por correo o LinkedIn, o déjame un mensaje en el formulario.
+                    </p>
+                </header>
+
+                <div class="contact">
+                    <ul class="contact__links reveal">
+                        <li>
+                            <a class="contact-link" href="mailto:jeffersondavila16@gmail.com">
+                                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M3 7l9 6 9-6M3 7v10h18V7H3z" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="contact-link__label">Email</span>
+                                <span class="contact-link__value">jeffersondavila16@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link" href="https://www.linkedin.com/in/jefferson-d%C3%A1vila-305b54196/"
+                                target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path fill="currentColor"
+                                        d="M20 3H4c-.55 0-1 .45-1 1v16c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zM8.34 18.34H5.67v-8.59h2.67v8.59zM7 8.57a1.55 1.55 0 1 1 0-3.1 1.55 1.55 0 0 1 0 3.1zm11.34 9.77h-2.67v-4.18c0-1-.02-2.28-1.39-2.28-1.39 0-1.6 1.09-1.6 2.21v4.25h-2.67v-8.59h2.56v1.17h.04c.36-.67 1.23-1.38 2.52-1.38 2.71 0 3.21 1.78 3.21 4.09v4.71z" />
+                                </svg>
+                                <span class="contact-link__label">LinkedIn</span>
+                                <span class="contact-link__value">jeffersondavila</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link" href="https://github.com/jeffersondavila" target="_blank"
+                                rel="noopener">
+                                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.03 2c-5.51 0-9.98 4.47-9.98 9.97 0 4.41 2.86 8.15 6.82 9.47.5.09.68-.22.68-.48 0-.24 0-.87-.01-1.7-2.78.6-3.36-1.34-3.36-1.34-.45-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.33 1.08 2.9.83.09-.65.35-1.09.63-1.34-2.21-.25-4.54-1.1-4.54-4.93 0-1.09.39-1.98 1.02-2.67-.1-.26-.44-1.27.1-2.64 0 0 .84-.27 2.74 1.02a9.5 9.5 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.38.1 2.64.64.69 1.02 1.58 1.02 2.67 0 3.83-2.33 4.67-4.55 4.92.36.31.68.92.68 1.85 0 1.33-.01 2.41-.01 2.74 0 .26.18.58.69.48A9.98 9.98 0 0 0 22 11.97C22 6.47 17.53 2 12.03 2z" />
+                                </svg>
+                                <span class="contact-link__label">GitHub</span>
+                                <span class="contact-link__value">jeffersondavila</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="contact-link" href="assets/Jefferson Davila CV.pdf" target="_blank"
+                                rel="noopener">
+                                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+                                    <path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16" fill="none" stroke="currentColor"
+                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <span class="contact-link__label">Currículum</span>
+                                <span class="contact-link__value">Descargar PDF</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <form class="form reveal" id="contact-form" novalidate>
+                        <div class="field">
+                            <label for="field-name">Nombre</label>
+                            <input id="field-name" type="text" name="name" autocomplete="name" required
+                                aria-describedby="hint-name">
+                            <p class="field__hint" id="hint-name">Cómo debo dirigirme a ti.</p>
+                        </div>
+
+                        <div class="field">
+                            <label for="field-email">Correo</label>
+                            <input id="field-email" type="email" name="email" autocomplete="email" required
+                                aria-describedby="hint-email">
+                            <p class="field__hint" id="hint-email">Para poder responderte.</p>
+                        </div>
+
+                        <div class="field field--full">
+                            <label for="field-message">Mensaje</label>
+                            <textarea id="field-message" name="comments" rows="6" required></textarea>
+                        </div>
+
+                        <p class="field field--honey" aria-hidden="true">
+                            <label for="field-honey">No llenar este campo</label>
+                            <input id="field-honey" type="text" name="_honey" tabindex="-1" autocomplete="off">
+                        </p>
+
+                        <div class="form__footer">
+                            <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+                            <p class="form__status" role="status" aria-live="polite"></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container site-footer__inner">
+            <p class="site-footer__copy">
+                &copy; <span data-current-year>2025</span> Jefferson Dávila — Senior .NET Developer
+            </p>
+            <ul class="site-footer__links">
+                <li><a href="https://github.com/jeffersondavila" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/jefferson-d%C3%A1vila-305b54196/" target="_blank"
+                        rel="noopener">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/@QuelocoBro" target="_blank" rel="noopener">YouTube</a></li>
+            </ul>
         </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script src="main.js" defer></script>
 </body>
 
 </html>
